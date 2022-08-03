@@ -18,8 +18,7 @@ public class Item {
     @Column(length = 200,name="DESCRIPTION")
     private String description;
 
-    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL, orphanRemoval = true)
-    Set<Review> reviews = new HashSet<>();
+
 
     public Item() {
     }
@@ -41,14 +40,7 @@ public class Item {
         return description;
     }
 
-    public Set<Review> getReviews() {
-        return reviews;
-    }
 
-    public void addReview(Review review) {
-        reviews.add(review);
-        review.setItem(this);
-    }
 
     @Override
     public String toString() {
@@ -56,7 +48,7 @@ public class Item {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
-//                ", reviews=" + reviews +
+//              
                 '}';
     }
 }

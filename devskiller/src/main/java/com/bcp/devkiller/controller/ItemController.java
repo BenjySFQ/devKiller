@@ -22,7 +22,7 @@ public class ItemController {
         return service.getTitlesWithAverageRatingLowerThan(rating);
     }
 
-    @GetMapping("/lista")
+    @GetMapping("/list")
     public List<Item> lista(){
         return service.lista();
     }
