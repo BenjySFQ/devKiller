@@ -1,4 +1,4 @@
-package com.bcp.devskiller;
+package com.bcp.devskill;
 
 
 import org.junit.Test;
@@ -8,7 +8,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class TipoCambioApplicationTests {
+public class DevskilloApplicationTests {
 
 	@Test
 	public void contextLoads() {
